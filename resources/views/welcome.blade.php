@@ -28,15 +28,20 @@
 
   <main id="top">
     <section class="hero">
-      <div class="hero-image parallax" data-speed="0.22"></div>
+      <div class="hero-image parallax" data-speed="0.28"></div>
       <div class="hero-shade"></div>
       <div class="hero-content">
-        <p class="eyebrow light"><span class="eyebrow-line"></span> WEALTH MANAGEMENT · NAIROBI, KENYA</p>
+        <p class="eyebrow"><span class="eyebrow-line"></span> WEALTH MANAGEMENT · NAIROBI, KENYA</p>
         <h1>Scaling up your<br><em>financial altitude.</em></h1>
         <p class="hero-copy">Short-term note investments and a diversified, multi-asset strategy for institutions and high-net-worth investors.</p>
         <div class="hero-actions"><a class="button button-light" href="#approach">Discover our approach <span>↓</span></a><a class="text-link light-link" href="#contact">Talk to our team <span>↗</span></a></div>
+        <div class="hero-facts" aria-label="Fund features">
+          <div><strong>0%</strong><span>Opening &amp; annual management fees</span></div>
+          <div><strong>12 months</strong><span>Capital lock-in period</span></div>
+          <div><strong>Quarterly</strong><span>Interest payouts</span></div>
+        </div>
       </div>
-      <div class="hero-bottom"><span class="hero-caption">SHORT-TERM NOTES · MULTI-ASSET STRATEGY</span><a href="#approach" aria-label="Scroll to our approach">SCROLL TO EXPLORE <span>↓</span></a></div>
+      <div class="hero-visual-caption"><span>TAZAN GLOBAL</span><i></i><span>NAIROBI · KENYA</span></div>
     </section>
 
     <section class="intro section-pad" id="approach">
@@ -49,7 +54,7 @@
     </section>
 
     <section class="strategy" id="strategy">
-      <div class="strategy-visual"><div class="strategy-photo parallax" data-speed="0.1"></div><div class="strategy-photo-shade"></div><div class="strategy-coordinates">01°17′S&nbsp; 36°49′E</div><div class="strategy-stamp">GLOBAL<br><span>BY DESIGN</span></div><div class="strategy-glass"><span>OUR INVESTMENT UNIVERSE</span><div class="asset-dots"><i></i><i></i><i></i><i></i><i></i><i></i></div><small>Multiple asset classes. One considered strategy.</small></div></div>
+      <div class="strategy-visual"><div class="strategy-photo parallax" data-speed="0.24"></div><div class="strategy-photo-shade"></div><div class="strategy-coordinates">01°17′S&nbsp; 36°49′E</div><div class="strategy-stamp">GLOBAL<br><span>BY DESIGN</span></div><div class="strategy-glass"><span>OUR INVESTMENT UNIVERSE</span><div class="asset-dots"><i></i><i></i><i></i><i></i><i></i><i></i></div><small>Multiple asset classes. One considered strategy.</small></div></div>
       <div class="strategy-content section-pad">
         <div class="section-index light-index reveal"><span>02</span><span class="index-rule"></span><span>HOW WE INVEST</span></div>
         <div class="strategy-text reveal"><p class="eyebrow light">DISCIPLINE MEETS OPPORTUNITY</p><h2>Built for<br>more than<br><em>one market.</em></h2><p>Our diversified fund applies a long/short model to pursue capital growth when markets rise or fall. The company profile describes a portfolio spanning more than 200 asset classes, with position sizing and risk parameters intended to manage adverse movements and volatility.</p></div>
@@ -88,7 +93,7 @@
       <div class="account-opening reveal"><div class="opening-copy"><p class="eyebrow">HOW TO OPEN AN ACCOUNT</p><h3>A simple place to begin.</h3><p>Prepare the following documents for your wealth management account application:</p></div><ol><li><span>01</span>National ID or passport; company registration certificate for companies</li><li><span>02</span>Tax Identification Number (PIN), personal or company</li><li><span>03</span>Disbursement reference details</li></ol></div>
     </section>
 
-    <section class="quote-band"><div class="quote-image parallax" data-speed="0.12"></div><div class="quote-overlay"></div><div class="quote-content reveal"><p class="eyebrow light">A PARTNERSHIP FOR THE LONG VIEW</p><h2>Let your next chapter<br>begin <em>with perspective.</em></h2><a class="button button-light" href="#contact">Start a conversation <span>↗</span></a></div><span class="quote-number">TAZAN GLOBAL · NAIROBI</span></section>
+    <section class="quote-band"><div class="quote-image parallax" data-speed="0.22"></div><div class="quote-overlay"></div><div class="quote-content reveal"><p class="eyebrow light">A PARTNERSHIP FOR THE LONG VIEW</p><h2>Let your next chapter<br>begin <em>with perspective.</em></h2><a class="button button-light" href="#contact">Start a conversation <span>↗</span></a></div><span class="quote-number">TAZAN GLOBAL · NAIROBI</span></section>
 
     <section class="contact section-pad" id="contact">
       <div class="contact-left reveal"><div class="section-index"><span>05</span><span class="index-rule"></span><span>GET IN TOUCH</span></div><p class="eyebrow">YOUR JOURNEY STARTS HERE</p><h2>Let’s talk<br><em>about what’s next.</em></h2><p>Connect with our team to learn more about Tazan Global and the account opening process.</p><a class="button button-dark" href="mailto:info@tazanglobal.com">Email our team <span>↗</span></a></div>

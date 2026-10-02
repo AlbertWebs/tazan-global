@@ -15,6 +15,7 @@
 /Homestead.json
 /Homestead.yaml
 /auth.json
+*.pem
 /npm-debug.log
 /yarn-error.log
 /.fleet

@@ -13,7 +13,10 @@
       parallaxItems.forEach(item => {
         const rect = item.parentElement.getBoundingClientRect();
         const speed = Number(item.dataset.speed || 0.1);
-        item.style.transform = `translate3d(0, ${rect.top * -speed}px, 0) scale(1.08)`;
+        const scale = window.innerWidth <= 650 ? 1.5 : 1.44;
+        const travel = item.offsetHeight * (scale - 1) / 2;
+        const offset = Math.max(-travel, Math.min(travel, rect.top * -speed));
+        item.style.transform = `translate3d(0, ${offset}px, 0) scale(${scale})`;
       });
     }
     ticking = false;
