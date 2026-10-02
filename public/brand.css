@@ -1,0 +1,532 @@
+:root {
+  --navy: #082b43;
+  --navy2: #12364c;
+  --red: #e31837;
+  --gold: #718893;
+  --ivory: #fff;
+  --ink: #173247;
+  --muted: #687d88;
+  --line: rgba(8, 43, 67, .14);
+}
+
+body { background: #fff; color: var(--ink); }
+.site-header { font-size: 13px; }
+.navigation { font-size: 13px; }
+.eyebrow { font-size: 11px; }
+.hero-copy { max-width: 410px; font-size: 17px; line-height: 1.75; }
+.hero-actions .button { font-size: 12px; }
+.text-link { font-size: 12px; }
+.hero-bottom { font-size: 9px; }
+.glass-kicker { font-size: 10px; }
+.glass-label { font-size: 11px; }
+.glass-number { font-size: 56px; }
+.section-index { font-size: 10px; }
+.intro-copy p { font-size: 15px; line-height: 1.85; }
+.intro-copy .lead { font-size: 19px; line-height: 1.65; }
+.intro-foot { font-size: 9px; }
+.strategy-coordinates { font-size: 9px; }
+.strategy-glass > span { font-size: 9px; }
+.strategy-glass small { font-size: 10px; }
+.strategy-text > p:last-child { font-size: 15px; line-height: 1.8; }
+.asset-list span { font-size: 10px; }
+.asset-list b { font-size: 12px; }
+.statement-top > span { font-size: 9px; }
+.statement-aside p { font-size: 13px; line-height: 1.8; }
+.benefits-lead { font-size: 13px; }
+.benefit-card { min-height: 305px; }
+.benefit-card h3 { font-size: 17px; }
+.benefit-card p { font-size: 13px; line-height: 1.75; }
+.card-number { font-size: 10px; }
+.terms-note { font-size: 12px; }
+.terms-note > span { font-size: 9px; }
+.terms-note b { font-size: 17px; }
+.account-heading > p { font-size: 14px; }
+.investor-item > span,.opening-copy .eyebrow { font-size: 10px; }
+.investor-item h3 { font-size: 18px; }
+.investor-item p { font-size: 13px; line-height: 1.75; }
+.opening-copy h3 { font-size: 24px; }
+.opening-copy > p:last-child,.account-opening li { font-size: 13px; }
+.quote-content .button { font-size: 12px; }
+.contact-left > p:not(.eyebrow) { font-size: 14px; line-height: 1.8; }
+.contact-card > p { font-size: 13px; }
+.contact-row { font-size: 12px; }
+.contact-row > span:first-child { font-size: 9px; }
+.legacy-contact { font-size: 11px; }
+.footer-copy { font-size: 10px; }
+.back-top { font-size: 9px; }
+.risk-note { font-size: 9px; }
+.site-header { min-height: 96px; border-color: rgba(255,255,255,.2); }
+.brand { gap: 13px; }
+.brand-logo-wrap {
+  display: grid;
+  place-items: center;
+  width: 116px;
+  height: 80px;
+  padding: 4px 7px;
+  overflow: hidden;
+  border-radius: 2px;
+  background: #fff;
+}
+.brand-logo { display: block; width: 100%; height: 100%; object-fit: contain; }
+.brand-word {
+  color: rgba(255,255,255,.79);
+  font-size: 8px;
+  line-height: 1.5;
+  letter-spacing: .2em;
+}
+.brand-word b { color: var(--red); }
+.benefits { background: #f5f8fa; }
+.benefit-grid { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+.benefit-card { background: #fff; border-color: rgba(8,43,67,.07); }
+.benefit-icon svg { stroke: #607d8b; }
+.eyebrow { color: #607d8b; }
+.hero-shade { background: linear-gradient(90deg,rgba(4,24,39,.9) 0%,rgba(5,31,49,.73) 44%,rgba(5,29,47,.25) 100%),linear-gradient(0deg,rgba(4,22,37,.68),transparent 40%); }
+.hero-glass { border-color: rgba(255,255,255,.34); }
+.account { padding-top: 120px; padding-bottom: 115px; background: #fff; }
+.account-heading { display:grid; grid-template-columns: 1fr .6fr; gap: 12%; align-items:end; margin-top: 62px; }
+.account-heading .eyebrow { margin-bottom: 18px; }
+.account-heading h2 { margin:0; font-size:clamp(44px,5vw,65px); line-height:1.06; }
+.account-heading h2 em { color:#607d8b; }
+.account-heading>p { max-width:390px; margin:0 0 5px; color:#6b7b84; font-size:11px; line-height:1.9; }
+.investor-grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); margin-top:62px; border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+.investor-item { min-height:220px; padding:24px 24px 25px 0; }
+.investor-item+.investor-item { border-left:1px solid var(--line); padding-left:24px; }
+.investor-item>span,.opening-copy .eyebrow { color:#718893; font-size:8px; letter-spacing:.16em; }
+.investor-item h3 { margin:31px 0 12px; font:600 16px var(--display); letter-spacing:-.035em; color:var(--navy); }
+.investor-item p { margin:0; color:#6c7b83; font-size:10px; line-height:1.8; }
+.account-opening { display:grid; grid-template-columns:.8fr 1fr; gap:10%; align-items:center; margin-top:48px; padding:34px 38px; background:linear-gradient(135deg,#f8fafb,#eef3f5); border:1px solid #e7edf0; }
+.opening-copy h3 { margin:14px 0 10px; font:500 22px var(--display); letter-spacing:-.045em; }
+.opening-copy>p:last-child { margin:0; color:#708089; font-size:10px; line-height:1.7; }
+.account-opening ol { list-style:none; margin:0; padding:0; }
+.account-opening li { display:flex; align-items:flex-start; gap:17px; padding:12px 0; color:#344f60; font-size:10px; line-height:1.65; border-bottom:1px solid rgba(8,43,67,.1); }
+.account-opening li:last-child { border:0; }
+.account-opening li span { color:var(--red); font:500 10px var(--display); }
+.profile-claim { padding-left:14px; border-left:2px solid var(--red); color:#647984!important; font-size:10px!important; }
+.terms-note { background:#fff; }
+.terms-note>span { color:#607d8b; }
+.terms-note b { color:var(--navy); }
+.contact-card { background:rgba(255,255,255,.92); }
+.legacy-contact { margin:16px 0 0; padding-top:12px; border-top:1px solid var(--line); color:#77868c; font-size:8px; line-height:1.7; }
+.full-logo-tile { display:grid; place-items:center; margin-top:19px; padding:12px; background:#fff; border:1px solid #edf0f1; }
+.full-logo-tile img { width:min(180px,80%); height:auto; }
+.site-footer { background:#082b43; }
+.footer-brand .brand-logo-wrap { width:94px; height:65px; }
+.footer-brand .brand-word { font-size:7px; }
+
+@media (max-width: 1000px) {
+  .benefit-grid { grid-template-columns:repeat(3,minmax(0,1fr)); }
+  .investor-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+  .investor-item:nth-child(3) { border-left:0; padding-left:0; border-top:1px solid var(--line); }
+  .investor-item:nth-child(4) { border-top:1px solid var(--line); }
+}
+@media (max-width: 650px) {
+  .site-header { min-height:68px; }
+  .brand-logo-wrap { width:91px; height:59px; padding:3px 5px; }
+  .brand-word { display:none; }
+  .navigation { font-size: 14px; }
+  .eyebrow { font-size: 10px; }
+  .hero-copy { font-size: 15px; }
+  .hero-bottom { font-size: 8px; }
+  .glass-kicker { font-size: 9px; }
+  .glass-label { font-size: 10px; }
+  .intro-copy p { font-size: 14px; }
+  .intro-copy .lead { font-size: 17px; }
+  .intro-foot { font-size: 8px; }
+  .strategy-text > p:last-child { font-size: 14px; }
+  .statement-aside p { font-size: 12px; }
+  .benefit-card { min-height: 280px; }
+  .benefit-card h3 { font-size: 15px; }
+  .benefit-card p { font-size: 12px; }
+  .terms-note { font-size: 11px; }
+  .terms-note b { font-size: 15px; }
+  .account-heading > p { font-size: 13px; }
+  .investor-item > span,.opening-copy .eyebrow { font-size: 9px; }
+  .investor-item h3 { font-size: 17px; }
+  .investor-item p { font-size: 12px; }
+  .opening-copy > p:last-child,.account-opening li { font-size: 12px; }
+  .contact-left > p:not(.eyebrow) { font-size: 13px; }
+  .contact-card > p { font-size: 12px; }
+  .contact-row { font-size: 11px; }
+  .legacy-contact { font-size: 10px; }
+  .risk-note { font-size: 8px; }
+  .benefit-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+  .account { padding-top:80px; padding-bottom:75px; }
+  .account-heading { display:block; margin-top:45px; }
+  .account-heading h2 { font-size:45px; }
+  .account-heading>p { margin-top:21px; }
+  .investor-grid { display:block; margin-top:38px; }
+  .investor-item,.investor-item+.investor-item,.investor-item:nth-child(3),.investor-item:nth-child(4) { min-height:0; padding:20px 0; border-left:0; border-top:0; border-bottom:1px solid var(--line); }
+  .investor-item h3 { margin:15px 0 8px; }
+  .account-opening { display:block; margin-top:30px; padding:24px 20px; }
+  .account-opening ol { margin-top:18px; }
+  .footer-brand .brand-word { display:none; }
+  .footer-brand .brand-logo-wrap { width:79px; height:54px; }
+}
+
+/* Comfortable reading sizes across the full page */
+body { font-size: 16px; }
+.site-header .brand-word { font-size: 10px; }
+.footer-brand .brand-word { font-size: 9px; }
+.navigation { font-size: 13px; }
+.eyebrow { font-size: 11px; }
+.hero-copy { font-size: 17px; }
+.hero-actions .button,.quote-content .button,.text-link { font-size: 12px; }
+.hero-caption,.quote-number { font-size: 10px; }
+.hero-seal i { font-size: 7px; }
+.glass-kicker { font-size: 10px; }
+.glass-label { font-size: 11px; }
+.section-index { font-size: 10px; }
+.intro-copy p { font-size: 15px; }
+.intro-copy .lead { font-size: 19px; }
+.intro-copy .profile-claim { font-size: 13px !important; }
+.intro-foot { font-size: 9px; }
+.strategy-text > p:last-child { font-size: 15px; }
+.asset-list span { font-size: 10px; }
+.asset-list b { font-size: 12px; }
+.statement-aside p { font-size: 13px; }
+.benefits-lead { font-size: 13px; }
+.benefit-card { min-height: 305px; }
+.benefit-card h3 { font-size: 17px; }
+.benefit-card p { font-size: 13px; }
+.terms-note { font-size: 12px; }
+.terms-note b { font-size: 17px; }
+.account-heading > p { font-size: 14px; }
+.investor-item > span,.opening-copy .eyebrow { font-size: 10px; }
+.investor-item h3 { font-size: 18px; }
+.investor-item p { font-size: 13px; }
+.opening-copy > p:last-child,.account-opening li { font-size: 13px; }
+.contact-left > p:not(.eyebrow) { font-size: 14px; }
+.contact-card > p { font-size: 13px; }
+.contact-row { font-size: 12px; }
+.contact-row > span:first-child { font-size: 9px; }
+.legacy-contact { font-size: 11px; }
+.footer-copy { font-size: 10px; }
+.back-top,.risk-note { font-size: 9px; }
+
+@media (max-width: 650px) {
+  .site-header .brand-word,.footer-brand .brand-word { display:none; }
+  .navigation { font-size: 14px; }
+  .eyebrow { font-size: 10px; }
+  .hero-copy { font-size: 15px; }
+  .intro-copy p { font-size: 14px; }
+  .intro-copy .lead { font-size: 17px; }
+  .intro-copy .profile-claim { font-size: 12px !important; }
+  .intro-foot { font-size: 8px; }
+  .strategy-text > p:last-child { font-size: 14px; }
+  .statement-aside p { font-size: 12px; }
+  .benefit-card { min-height: 280px; }
+  .benefit-card h3 { font-size: 15px; }
+  .benefit-card p { font-size: 12px; }
+  .terms-note { font-size: 11px; }
+  .terms-note b { font-size: 15px; }
+  .account-heading > p { font-size: 13px; }
+  .investor-item > span,.opening-copy .eyebrow { font-size: 9px; }
+  .investor-item h3 { font-size: 17px; }
+  .investor-item p { font-size: 12px; }
+  .opening-copy > p:last-child,.account-opening li { font-size: 12px; }
+  .contact-left > p:not(.eyebrow) { font-size: 13px; }
+  .contact-card > p { font-size: 12px; }
+  .contact-row { font-size: 11px; }
+  .legacy-contact { font-size: 10px; }
+  .back-top,.risk-note { font-size: 8px; }
+}
+
+/* Stronger contrast between the white canvas and content surfaces */
+.intro,
+.account { background: #f2f6f8; }
+.statement { background: #fff; }
+.benefits { background: #e8eff3; }
+.contact { background: #f2f6f8; }
+.intro h2 em,
+.benefits h2 em,
+.contact h2 em,
+.account-heading h2 em { color: #e31837; }
+.statement-main h2 em { color: #082b43; }
+.eyebrow { color: #45616e; }
+.section-index { color: #526b78; }
+.intro-copy p,
+.statement-aside p,
+.benefits-lead,
+.strategy-text > p:last-child,
+.contact-left > p:not(.eyebrow) { color: #435966; }
+.intro-copy .lead { color: #082b43; }
+.strategy-text > p:last-child { color: rgba(255,255,255,.78); }
+.benefit-card {
+  background: #fff;
+  border: 1px solid rgba(8,43,67,.16);
+  box-shadow: 0 12px 30px rgba(8,43,67,.08);
+}
+.benefit-card:hover { box-shadow: 0 18px 38px rgba(8,43,67,.14); }
+.benefit-card p { color: #435966; }
+.benefit-icon { display:grid; place-items:center; border-radius:50%; background:#edf3f6; }
+.benefit-icon svg { width:27px; height:27px; stroke:#082b43; }
+.card-arrow { color:#e31837; }
+.terms-note {
+  background: #082b43;
+  border-color: #082b43;
+  color: rgba(255,255,255,.85);
+  box-shadow: 0 12px 28px rgba(8,43,67,.15);
+}
+.terms-note > span { color: #b7c8d0; }
+.terms-note b { color: #fff; }
+.terms-note i { background: rgba(255,255,255,.3); }
+.terms-note a { color: #fff; }
+.investor-grid { gap: 14px; border: 0; }
+.investor-item,
+.investor-item+.investor-item {
+  min-height: 250px;
+  padding: 24px;
+  border: 1px solid rgba(8,43,67,.14);
+  background: #fff;
+  box-shadow: 0 10px 28px rgba(8,43,67,.06);
+}
+.investor-item > span { color:#526e7c; }
+.investor-item h3 { color:#082b43; }
+.investor-item p { color:#435966; }
+.account-opening {
+  background: #fff;
+  border-color: rgba(8,43,67,.15);
+  box-shadow: 0 12px 30px rgba(8,43,67,.07);
+}
+.contact-card {
+  border-color: rgba(8,43,67,.18);
+  box-shadow: 0 20px 48px rgba(8,43,67,.12);
+}
+.full-logo-tile { border-color: rgba(8,43,67,.15); }
+.hero-glass { background:linear-gradient(135deg,rgba(8,43,67,.82),rgba(8,43,67,.56)); box-shadow:0 18px 55px rgba(0,0,0,.28); }
+.strategy-glass { background:rgba(8,43,67,.72); border-color:rgba(255,255,255,.34); }
+.quote-overlay { background:linear-gradient(90deg,rgba(4,24,39,.9),rgba(4,24,39,.58) 63%,rgba(4,24,39,.5)); }
+.site-footer { border-top:3px solid #e31837; }
+.hero-image,.hero-shade,.hero-grain,.hero-orbit { pointer-events:none; }
+.hero-content { position:relative; z-index:2; pointer-events:none; }
+.hero h1 em { font-style:normal; }
+.hero-actions { position:relative; z-index:5; pointer-events:none; }
+.hero-actions a { position:relative; z-index:6; pointer-events:auto; cursor:pointer; }
+.hero-actions a:focus-visible { outline:3px solid #e31837; outline-offset:5px; }
+.hero-actions a:active { transform:translateY(1px); }
+
+@media (max-width: 1000px) {
+  .investor-grid { gap:12px; }
+  .investor-item,.investor-item+.investor-item { min-height:220px; padding:20px; border:1px solid rgba(8,43,67,.14); }
+}
+@media (max-width: 650px) {
+  .intro,.account,.contact { background:#f2f6f8; }
+  .benefits { background:#e8eff3; }
+  .investor-grid { gap:10px; }
+  .investor-item,.investor-item+.investor-item,.investor-item:nth-child(3),.investor-item:nth-child(4) {
+    min-height:0;
+    padding:18px;
+    border:1px solid rgba(8,43,67,.14);
+    background:#fff;
+  }
+  .terms-note { align-items:flex-start; }
+}
+
+.contact-card { padding:36px; }
+.contact-card-head { color:#526e7c; font-size:10px; letter-spacing:.17em; }
+.contact-pin {
+  display:grid;
+  place-items:center;
+  width:37px;
+  height:37px;
+  border-radius:50%;
+  color:#fff;
+  background:#082b43;
+}
+.contact-card h3 { margin:23px 0 9px; font-size:28px; }
+.contact-card .office-address { margin:0; color:#435966; font-size:15px; line-height:1.65; }
+.directions-link { display:inline-flex; gap:12px; align-items:center; margin-top:14px; color:#e31837; font-size:12px; font-weight:700; }
+.directions-link span { font-size:15px; }
+.contact-card .contact-divider { margin:23px 0 14px; background:rgba(8,43,67,.16); }
+.contact-links { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; }
+.contact-method-email { grid-column:1/-1; }
+.contact-method {
+  position:relative;
+  display:grid;
+  grid-template-columns:minmax(0,1fr) auto;
+  gap:8px 5px;
+  min-height:77px;
+  align-content:center;
+  padding:14px;
+  border:1px solid rgba(8,43,67,.12);
+  background:#f4f7f8;
+  transition:background .2s,border-color .2s,transform .2s;
+}
+a.contact-method:hover { transform:translateY(-2px); border-color:#8197a1; background:#fff; }
+.contact-method span { grid-column:1/-1; color:#607d8b; font-size:9px; letter-spacing:.12em; }
+.contact-method strong { min-width:0; overflow-wrap:anywhere; color:#082b43; font-size:13px; font-weight:600; }
+.contact-method-email strong { white-space:nowrap; overflow-wrap:normal; }
+.contact-method i { align-self:center; color:#e31837; font-size:13px; font-style:normal; }
+.contact-method-post { background:#fff; }
+.legacy-contact { margin-top:20px; padding-top:15px; border-top:1px solid rgba(8,43,67,.14); color:#435966; font-size:12px; }
+.legacy-contact summary { color:#526e7c; font-size:11px; font-weight:600; cursor:pointer; }
+.legacy-contact summary::marker { color:#e31837; }
+.legacy-contact > div { display:grid; gap:8px; margin-top:13px; }
+.legacy-contact a { color:#082b43; font-size:12px; overflow-wrap:anywhere; }
+.legacy-contact a:hover { color:#e31837; }
+@media (max-width: 650px) {
+  .contact-card { padding:25px 20px; }
+  .contact-card h3 { font-size:24px; }
+  .contact-card .office-address { font-size:13px; }
+  .contact-method { min-height:73px; padding:11px; }
+  .contact-method strong { font-size:11px; }
+  .legacy-contact summary { font-size:10px; }
+  .legacy-contact a { font-size:11px; }
+}
+
+@media (max-width: 650px) {
+  .hero-content { z-index:4; }
+  .hero-glass { left:auto; right:6%; bottom:96px; width:min(190px,38vw); }
+  .hero-seal { display:none; }
+}
+@media (max-width: 420px) {
+  .hero-glass { bottom:60px; width:158px; }
+}
+@media (max-width: 360px) {
+  .contact-links { grid-template-columns:1fr; }
+}
+@media (max-width: 760px) {
+  .hero-actions { display:flex; flex-direction:column; align-items:flex-start; gap:18px; }
+  .hero-bottom { justify-content:flex-end; }
+  .hero-bottom .hero-caption { display:none; }
+}
+
+/* Consistent, restrained interaction feedback */
+.navigation a,
+.brand-logo-wrap,
+.asset-list span,
+.benefit-card,
+.investor-item,
+.button,
+.text-link,
+.directions-link,
+.back-top,
+.contact-method {
+  transition:color .22s ease,background-color .22s ease,border-color .22s ease,box-shadow .22s ease,transform .22s ease;
+}
+.navigation a:not(.nav-cta) { position:relative; }
+.navigation a:not(.nav-cta)::after {
+  position:absolute;
+  content:"";
+  left:0;
+  right:100%;
+  bottom:-7px;
+  height:1px;
+  background:#e31837;
+  transition:right .22s ease;
+}
+.nav-cta span,
+.button span,
+.text-link span,
+.directions-link span { display:inline-block; transition:transform .22s ease; }
+.asset-list span { transition:padding-left .22s ease,color .22s ease; }
+.hero-image,.strategy-photo,.quote-image { transition:filter .4s ease; }
+.contact-card .contact-divider { transition:background-color .22s ease; }
+
+@media (hover:hover) {
+  .navigation a:not(.nav-cta):hover::after { right:0; }
+  .nav-cta:hover { color:#fff; border-color:#e31837; background:rgba(227,24,55,.12); }
+  .nav-cta:hover span,.button:hover span,.text-link:hover span,.directions-link:hover span { transform:translate(3px,-2px); }
+  .brand:hover .brand-logo-wrap { transform:translateY(-2px); box-shadow:0 7px 18px rgba(0,0,0,.16); }
+  .asset-list span:hover { padding-left:8px; color:#fff; }
+  .asset-list span:hover b { color:#fff; }
+  .benefit-card:hover,.investor-item:hover { transform:translateY(-5px); border-color:rgba(8,43,67,.3); box-shadow:0 20px 38px rgba(8,43,67,.14); }
+  .button-light:hover { background:#fff; box-shadow:0 10px 24px rgba(0,0,0,.18); }
+  .button-dark:hover { background:#17445f; box-shadow:0 10px 24px rgba(8,43,67,.2); }
+  .text-link:hover,.directions-link:hover,.back-top:hover { color:#e31837; }
+  .strategy-visual:hover .strategy-photo,.quote-band:hover .quote-image { filter:saturate(.85) brightness(1.08); }
+  .strategy-glass:hover,.hero-glass:hover { border-color:rgba(255,255,255,.6); }
+  .contact-method:hover { transform:translateY(-2px); border-color:#8197a1; box-shadow:0 9px 20px rgba(8,43,67,.09); }
+  .contact-card:hover .contact-divider { background:rgba(227,24,55,.4); }
+  .account-opening:hover { border-color:rgba(8,43,67,.28); box-shadow:0 18px 38px rgba(8,43,67,.12); }
+}
+
+a:focus-visible,button:focus-visible,summary:focus-visible {
+  outline:2px solid #e31837;
+  outline-offset:4px;
+}
+.floating-top {
+  position:fixed;
+  z-index:25;
+  right:26px;
+  bottom:26px;
+  display:grid;
+  place-items:center;
+  width:50px;
+  height:50px;
+  border:1px solid rgba(255,255,255,.58);
+  border-radius:50%;
+  background:#082b43;
+  color:#fff;
+  box-shadow:0 8px 24px rgba(8,43,67,.25);
+  font-size:24px;
+  line-height:1;
+  transition:transform .22s ease,background-color .22s ease,box-shadow .22s ease;
+}
+.floating-top:hover { transform:translateY(-4px); background:#e31837; box-shadow:0 12px 28px rgba(8,43,67,.3); }
+.floating-top:focus-visible { outline:3px solid #e31837; outline-offset:4px; }
+@media (prefers-reduced-motion: reduce) {
+  .navigation a,.navigation a::after,.brand-logo-wrap,.asset-list span,.benefit-card,.investor-item,.button,.text-link,.directions-link,.back-top,.contact-method,.hero-image,.strategy-photo,.quote-image,.contact-card .contact-divider {
+    transition:none !important;
+  }
+  .navigation a:not(.nav-cta)::after { display:none; }
+  .floating-top { transition:none !important; }
+}
+@media (max-width:650px) {
+  .floating-top { right:16px; bottom:16px; width:46px; height:46px; font-size:22px; }
+}
+
+/* Keep the contact area open and editorial rather than boxed */
+.contact-office {
+  position:relative;
+  z-index:1;
+  align-self:center;
+  padding:8px 0 8px 38px;
+  border:0;
+  border-left:1px solid rgba(8,43,67,.18);
+  background:transparent;
+  box-shadow:none;
+  backdrop-filter:none;
+}
+.contact-pin {
+  width:auto;
+  height:auto;
+  display:block;
+  border-radius:0;
+  background:transparent;
+  color:#e31837;
+  font-size:24px;
+}
+.contact-office h3 { margin:18px 0 8px; font:500 27px var(--display); letter-spacing:-.045em; color:#082b43; }
+.contact-office .office-address { margin:0; color:#435966; font-size:15px; line-height:1.7; }
+.contact-office .directions-link { margin-top:12px; }
+.contact-office .contact-divider { height:1px; margin:25px 0 3px; background:rgba(8,43,67,.18); }
+.contact-links { display:block; }
+.contact-method {
+  display:grid;
+  grid-template-columns:108px minmax(0,1fr) 15px;
+  align-items:center;
+  gap:8px 10px;
+  min-height:0;
+  padding:14px 0;
+  border:0;
+  border-bottom:1px solid rgba(8,43,67,.15);
+  background:transparent;
+}
+.contact-method span { grid-column:auto; color:#607d8b; font-size:9px; }
+.contact-method strong { white-space:normal; overflow-wrap:anywhere; font-size:13px; }
+.contact-method-email strong { white-space:nowrap; overflow-wrap:normal; }
+.contact-method i { justify-self:end; }
+.contact-method-post { background:transparent; }
+@media (hover:hover) {
+  a.contact-method:hover { transform:none; border-color:rgba(8,43,67,.15); background:transparent; box-shadow:none; }
+  a.contact-method:hover strong { color:#e31837; }
+}
+@media (max-width:650px) {
+  .contact-office { margin-top:48px; padding:29px 0 0; border-left:0; border-top:1px solid rgba(8,43,67,.18); }
+  .contact-office h3 { font-size:24px; }
+  .contact-office .office-address { font-size:14px; }
+  .contact-method { grid-template-columns:94px minmax(0,1fr) 13px; gap:7px; padding:13px 0; }
+  .contact-method strong { font-size:12px; }
+  .contact-method-email strong { font-size:11px; }
+}
