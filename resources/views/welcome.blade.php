@@ -4,6 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#ffffff">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('favicon.png') }}?v=2">
+  <link rel="icon" href="{{ asset('favicon.ico') }}?v=2" sizes="any">
+  <link rel="apple-touch-icon" href="{{ asset('apple-touch-icon.png') }}?v=2">
   <meta name="description" content="Tazan Global is a Nairobi wealth management company offering short-term note investments and a diversified, multi-asset strategy.">
   <title>Tazan Global — Scaling up your financial altitude</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
