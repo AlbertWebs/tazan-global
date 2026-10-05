@@ -24,7 +24,7 @@
     </a>
     <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
     <nav class="navigation" aria-label="Main navigation">
-      <a href="#approach">Our approach</a><a href="#strategy">Investment strategy</a><a href="#benefits">Why Tazan</a>
+      <a href="#approach">Our approach</a><a href="#strategy">Investment strategy</a><a href="#benefits">Why Tazan</a><a href="{{ route('insights.index') }}">Insights</a>
       <a class="nav-cta" href="#contact">Speak with us <span>↗</span></a>
     </nav>
   </header>
@@ -34,9 +34,9 @@
       <div class="hero-image parallax" data-speed="0.28"></div>
       <div class="hero-shade"></div>
       <div class="hero-content">
-        <p class="eyebrow"><span class="eyebrow-line"></span> WEALTH MANAGEMENT · NAIROBI, KENYA</p>
-        <h1>Scaling up your<br><em>financial altitude.</em></h1>
-        <p class="hero-copy">Short-term note investments and a diversified, multi-asset strategy for institutions and high-net-worth investors.</p>
+        <p class="eyebrow"><span class="eyebrow-line"></span> {{ $content['hero_label'] }}</p>
+        <h1>{!! nl2br(e($content['hero_title'])) !!}</h1>
+        <p class="hero-copy">{{ $content['hero_copy'] }}</p>
         <div class="hero-actions"><a class="button button-light" href="#approach">Discover our approach <span>↓</span></a><a class="text-link light-link" href="#contact">Talk to our team <span>↗</span></a></div>
         <div class="hero-facts" aria-label="Fund features">
           <div><strong>0%</strong><span>Opening &amp; annual management fees</span></div>
@@ -50,8 +50,8 @@
     <section class="intro section-pad" id="approach">
       <div class="section-index reveal"><span>01</span><span class="index-rule"></span><span>WHO WE ARE</span></div>
       <div class="intro-grid">
-        <div class="intro-heading reveal"><p class="eyebrow">A STEADY HAND IN A CHANGING WORLD</p><h2>Perspective is<br>our <em>greatest asset.</em></h2></div>
-        <div class="intro-copy reveal"><p class="lead">We are a wealth management company based in Nairobi, Kenya, dealing in short-term note investments designed to provide a predetermined regular income stream for high-net-worth institutions and investors.</p><p>Our multi-asset strategy uses a long/short trading model, with the primary objective of realizing capital growth and returns for investors. We bring years of experience trading financial instruments and make prudent investment decisions, supported by relationships with international trading desks, brokerages and investment banks.</p><p class="profile-claim">The company profile cites average yearly returns of 19%. This is a historical company claim, not a guaranteed return; investment outcomes can vary.</p><a class="text-link" href="#strategy">Explore our strategy <span>↗</span></a></div>
+        <div class="intro-heading reveal"><p class="eyebrow">{{ $content['intro_eyebrow'] }}</p><h2>{!! nl2br(e($content['intro_title'])) !!}</h2></div>
+        <div class="intro-copy reveal"><p class="lead">{{ $content['intro_lead'] }}</p><p>{{ $content['intro_body'] }}</p><p class="profile-claim">The company profile cites average yearly returns of 19%. This is a historical company claim, not a guaranteed return; investment outcomes can vary.</p><a class="text-link" href="#strategy">Explore our strategy <span>↗</span></a></div>
       </div>
       <div class="intro-foot reveal"><span>ROOTED IN NAIROBI</span><span class="foot-line"></span><span>CONNECTED TO GLOBAL MARKETS</span></div>
     </section>
@@ -60,7 +60,7 @@
       <div class="strategy-visual"><div class="strategy-photo parallax" data-speed="0.24"></div><div class="strategy-photo-shade"></div><div class="strategy-coordinates">01°17′S&nbsp; 36°49′E</div><div class="strategy-stamp">GLOBAL<br><span>BY DESIGN</span></div><div class="strategy-glass"><span>OUR INVESTMENT UNIVERSE</span><div class="asset-dots"><i></i><i></i><i></i><i></i><i></i><i></i></div><small>Multiple asset classes. One considered strategy.</small></div></div>
       <div class="strategy-content section-pad">
         <div class="section-index light-index reveal"><span>02</span><span class="index-rule"></span><span>HOW WE INVEST</span></div>
-        <div class="strategy-text reveal"><p class="eyebrow light">DISCIPLINE MEETS OPPORTUNITY</p><h2>Built for<br>more than<br><em>one market.</em></h2><p>Our diversified fund applies a long/short model to pursue capital growth when markets rise or fall. The company profile describes a portfolio spanning more than 200 asset classes, with position sizing and risk parameters intended to manage adverse movements and volatility.</p></div>
+        <div class="strategy-text reveal"><p class="eyebrow light">DISCIPLINE MEETS OPPORTUNITY</p><h2>{!! nl2br(e($content['strategy_title'])) !!}</h2><p>{{ $content['strategy_body'] }}</p></div>
         <div class="asset-list reveal"><span>01 <b>Precious metals</b></span><span>02 <b>Futures</b></span><span>03 <b>Energies</b></span><span>04 <b>Commodities</b></span><span>05 <b>Indices</b></span><span>06 <b>Currencies</b></span></div>
       </div>
       <div class="strategy-orb" aria-hidden="true"></div>
@@ -68,12 +68,12 @@
 
     <section class="statement section-pad">
       <div class="statement-top reveal"><p class="eyebrow">THE TAZAN PERSPECTIVE</p><span>BUILT ON EXPERIENCE · GUIDED BY DISCIPLINE</span></div>
-      <div class="statement-main reveal"><span class="quote-mark">“</span><h2>Wealth is a journey.<br><em>We help you see further.</em></h2><div class="statement-aside"><span class="aside-line"></span><p>Established synergies and partnerships connect us to international trading desks, brokerages and investment banks, bringing flexibility to investment decisions.</p></div></div>
+      <div class="statement-main reveal"><span class="quote-mark">“</span><h2>{!! nl2br(e($content['statement_title'])) !!}</h2><div class="statement-aside"><span class="aside-line"></span><p>{{ $content['statement_body'] }}</p></div></div>
       <div class="statement-decoration" aria-hidden="true"><svg viewBox="0 0 900 220" preserveAspectRatio="none"><path d="M0 183C112 189 115 148 205 159s94 2 158-44 98 30 172 0 82-82 147-44 92 19 218-50" fill="none" stroke="currentColor" stroke-width="1"/><path d="M0 200C112 206 115 165 205 176s94 2 158-44 98 30 172 0 82-82 147-44 92 19 218-50" fill="none" stroke="currentColor" stroke-width=".5" opacity=".5"/></svg></div>
     </section>
 
     <section class="benefits section-pad" id="benefits">
-      <div class="benefits-heading reveal"><div class="section-index"><span>03</span><span class="index-rule"></span><span>THE DIFFERENCE</span></div><p class="eyebrow">A MORE CONSIDERED PARTNERSHIP</p><h2>Built around<br><em>your perspective.</em></h2><p class="benefits-lead">A wealth management experience shaped by access, flexibility and a clear view of the long term.</p></div>
+      <div class="benefits-heading reveal"><div class="section-index"><span>03</span><span class="index-rule"></span><span>THE DIFFERENCE</span></div><p class="eyebrow">A MORE CONSIDERED PARTNERSHIP</p><h2>{!! nl2br(e($content['benefits_title'])) !!}</h2><p class="benefits-lead">{{ $content['benefits_body'] }}</p></div>
       <div class="benefit-grid">
         <article class="benefit-card reveal"><span class="card-number">01</span><div class="benefit-icon"><svg viewBox="0 0 48 48"><path d="M7 37V11m0 26h35M13 31l8-9 7 5 13-16"/><path d="M32 11h9v9"/></svg></div><h3>Capital growth</h3><p>A long/short model designed to seek opportunity through both upward and downward market movements.</p><span class="card-arrow">↗</span></article>
         <article class="benefit-card reveal"><span class="card-number">02</span><div class="benefit-icon"><svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="17"/><path d="M24 7v17l12 12M24 24l-12 9"/></svg></div><h3>Leverage</h3><p>The profile describes trading capacity above invested capital, which can amplify portfolio exposure and risk. Ask the team for the applicable terms.</p><span class="card-arrow">↗</span></article>
@@ -86,7 +86,7 @@
 
     <section class="account section-pad" id="account">
       <div class="section-index reveal"><span>04</span><span class="index-rule"></span><span>INVESTOR INFORMATION</span></div>
-      <div class="account-heading reveal"><div><p class="eyebrow">CLEAR TERMS. A PERSONAL CONVERSATION.</p><h2>Designed around<br><em>regular income.</em></h2></div><p>The company profile describes quarterly interest disbursements, with the flexibility to withdraw interest every three months during the year. Capital has a 12-month lock-in period. Contact Tazan Global for full product terms before investing.</p></div>
+      <div class="account-heading reveal"><div><p class="eyebrow">CLEAR TERMS. A PERSONAL CONVERSATION.</p><h2>{!! nl2br(e($content['account_title'])) !!}</h2></div><p>{{ $content['account_body'] }}</p></div>
       <div class="investor-grid">
         <article class="investor-item reveal"><span>01 / RETURNS</span><h3>19% average gains</h3><p>The profile cites average interest gains of 19% per annum. This figure is a company-reported historical average and is not a promise or guarantee of future performance.</p></article>
         <article class="investor-item reveal"><span>02 / DISTRIBUTION</span><h3>Quarterly disbursements</h3><p>Interest withdrawals are described as available after every three months within a year, subject to the investment terms.</p></article>
@@ -96,10 +96,26 @@
       <div class="account-opening reveal"><div class="opening-copy"><p class="eyebrow">HOW TO OPEN AN ACCOUNT</p><h3>A simple place to begin.</h3><p>Prepare the following documents for your wealth management account application:</p></div><ol><li><span>01</span>National ID or passport; company registration certificate for companies</li><li><span>02</span>Tax Identification Number (PIN), personal or company</li><li><span>03</span>Disbursement reference details</li></ol></div>
     </section>
 
-    <section class="quote-band"><div class="quote-image parallax" data-speed="0.22"></div><div class="quote-overlay"></div><div class="quote-content reveal"><p class="eyebrow light">A PARTNERSHIP FOR THE LONG VIEW</p><h2>Let your next chapter<br>begin <em>with perspective.</em></h2><a class="button button-light" href="#contact">Start a conversation <span>↗</span></a></div><span class="quote-number">TAZAN GLOBAL · NAIROBI</span></section>
+    <section class="quote-band"><div class="quote-image parallax" data-speed="0.22"></div><div class="quote-overlay"></div><div class="quote-content reveal"><p class="eyebrow light">A PARTNERSHIP FOR THE LONG VIEW</p><h2>{!! nl2br(e($content['quote_title'])) !!}</h2><a class="button button-light" href="#contact">Start a conversation <span>↗</span></a></div><span class="quote-number">TAZAN GLOBAL · NAIROBI</span></section>
+
+    @if ($insights->isNotEmpty())
+      <section class="home-insights section-pad" id="insights">
+        <div class="section-index reveal"><span>06</span><span class="index-rule"></span><span>IDEAS &amp; PERSPECTIVES</span></div>
+        <div class="insights-heading reveal"><div><p class="eyebrow">MARKET NOTES FROM TAZAN</p><h2>Clarity for a<br><em>changing world.</em></h2></div><a class="text-link" href="{{ route('insights.index') }}">View all insights <span>↗</span></a></div>
+        <div class="home-insights-grid">
+          @foreach ($insights as $insight)
+            <a class="home-insight-card reveal" href="{{ route('insights.show', $insight->slug) }}">
+              @if ($insight->cover_image)<img src="{{ asset('storage/'.$insight->cover_image) }}" alt="" loading="lazy">@else<div class="insight-placeholder" aria-hidden="true"><span>TG</span><i></i><i></i></div>@endif
+              <div class="home-insight-meta"><span>{{ $insight->category }}</span><span>{{ $insight->published_at->format('M j, Y') }}</span></div>
+              <h3>{{ $insight->title }}</h3><p>{{ $insight->excerpt }}</p><span class="insight-read">Read insight <b>↗</b></span>
+            </a>
+          @endforeach
+        </div>
+      </section>
+    @endif
 
     <section class="contact section-pad" id="contact">
-      <div class="contact-left reveal"><div class="section-index"><span>05</span><span class="index-rule"></span><span>GET IN TOUCH</span></div><p class="eyebrow">YOUR JOURNEY STARTS HERE</p><h2>Let’s talk<br><em>about what’s next.</em></h2><p>Connect with our team to learn more about Tazan Global and the account opening process.</p><a class="button button-dark" href="mailto:info@tazanglobal.com">Email our team <span>↗</span></a></div>
+      <div class="contact-left reveal"><div class="section-index"><span>05</span><span class="index-rule"></span><span>GET IN TOUCH</span></div><p class="eyebrow">YOUR JOURNEY STARTS HERE</p><h2>{!! nl2br(e($content['contact_title'])) !!}</h2><p>{{ $content['contact_body'] }}</p><a class="button button-dark" href="mailto:info@tazanglobal.com">Email our team <span>↗</span></a></div>
       <div class="contact-office reveal">
         <div class="contact-card-head"><span>OUR NAIROBI OFFICE</span><span class="contact-pin" aria-hidden="true">⌖</span></div>
         <h3>Western Heights</h3>
@@ -116,7 +132,7 @@
       <div class="contact-watermark" aria-hidden="true">TG</div>
     </section>
   </main>
-  <footer class="site-footer"><a class="brand footer-brand" href="#top" aria-label="Tazan Global home"><span class="brand-logo-wrap"><img class="brand-logo" src="{{ asset('images/tazan-global-logo.png') }}" alt="Tazan Global"></span><span class="brand-word">WEALTH<br>MANAGEMENT</span></a><span class="footer-tagline">Scaling up your financial altitude.</span><span class="footer-copy">© <span id="year"></span> Tazan Global Ltd. Nairobi, Kenya.</span><a class="back-top" href="#top">BACK TO TOP ↑</a><p class="risk-note">Investment products carry risk. Past performance does not guarantee future results. Please contact our team for full product information and terms.</p></footer>
+  <footer class="site-footer"><a class="brand footer-brand" href="#top" aria-label="Tazan Global home"><span class="brand-logo-wrap"><img class="brand-logo" src="{{ asset('images/tazan-global-logo.png') }}" alt="Tazan Global"></span><span class="brand-word">WEALTH<br>MANAGEMENT</span></a><span class="footer-tagline">Scaling up your financial altitude.</span><span class="footer-copy">© <span id="year"></span> Tazan Global Ltd. Nairobi, Kenya.</span><a class="back-top" href="#top">BACK TO TOP ↑</a><a class="back-top" href="{{ route('admin.login') }}">ADMIN ↗</a><p class="risk-note">Investment products carry risk. Past performance does not guarantee future results. Please contact our team for full product information and terms.</p></footer>
   <a class="floating-top" href="#top" aria-label="Back to top"><span aria-hidden="true">↑</span></a>
   <script src="{{ asset('script.js') }}"></script>
 </body>
