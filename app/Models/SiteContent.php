@@ -21,7 +21,7 @@ class SiteContent extends Model
         return [
             'hero_label' => 'WEALTH MANAGEMENT · NAIROBI, KENYA',
             'hero_title' => "Scaling up your\nfinancial altitude.",
-            'hero_copy' => 'Creating gains on your wealth through fixed short-term note investments.',
+            'hero_copy' => 'Achieve earnings on your capital through fixed short term note investments.',
             'intro_eyebrow' => 'A STEADY HAND IN A CHANGING WORLD',
             'intro_title' => "Everyone has access to the markets.\nWe know how to analyse them better.",
             'intro_lead' => 'We are a wealth management company based in Nairobi, Kenya, dealing in short-term note investments designed to provide a predetermined regular income stream for high-net-worth institutions and investors.',
