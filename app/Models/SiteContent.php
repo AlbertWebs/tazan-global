@@ -33,7 +33,7 @@ class SiteContent extends Model
             'benefits_title' => "Built around\nyour perspective.",
             'benefits_body' => 'A wealth management experience shaped by access, flexibility and a clear view of the long term.',
             'account_title' => "Designed around\nregular income.",
-            'account_body' => 'The company profile describes quarterly interest disbursements, with the flexibility to withdraw interest every three months during the year. Capital has a 12-month lock-in period. Contact Tazan Global for full product terms before investing.',
+            'account_body' => 'Tazan Global offers quarterly interest disbursements, with interest withdrawals available every three months during the year. Capital is subject to a 12-month lock-in period. Contact Tazan Global for full product terms before investing.',
             'quote_title' => "Let your next chapter\nbegin with perspective.",
             'contact_title' => "Let’s talk\nabout what’s next.",
             'contact_body' => 'Connect with our team to learn more about Tazan Global and the account opening process.',
