@@ -4,10 +4,17 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#ffffff">
+  <link rel="canonical" href="https://tazanglobal.com/">
   <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('favicon.png') }}?v=2">
   <link rel="icon" href="{{ asset('favicon.ico') }}?v=2" sizes="any">
   <link rel="apple-touch-icon" href="{{ asset('apple-touch-icon.png') }}?v=2">
   <meta name="description" content="Tazan Global is a Nairobi wealth management company offering short-term note investments and a diversified, multi-asset strategy.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Tazan Global">
+  <meta property="og:title" content="Tazan Global — Scaling up your financial altitude">
+  <meta property="og:description" content="Tazan Global is a Nairobi wealth management company offering short-term note investments and a diversified, multi-asset strategy.">
+  <meta property="og:url" content="https://tazanglobal.com/">
+  <meta name="twitter:card" content="summary">
   <title>Tazan Global — Scaling up your financial altitude</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -125,7 +132,7 @@
         <div class="contact-links">
           <a class="contact-method" href="tel:+254714595031"><span>CALL OUR TEAM</span><strong>+254 714 595 031</strong><i>↗</i></a>
           <a class="contact-method contact-method-email" href="mailto:info@tazanglobal.com"><span>EMAIL</span><strong>info@tazanglobal.com</strong><i>↗</i></a>
-          <a class="contact-method" href="https://www.tazanglobal.com" target="_blank" rel="noopener noreferrer"><span>WEBSITE</span><strong>tazanglobal.com</strong><i>↗</i></a>
+          <a class="contact-method" href="https://tazanglobal.com" target="_blank" rel="noopener noreferrer"><span>WEBSITE</span><strong>tazanglobal.com</strong><i>↗</i></a>
           <div class="contact-method contact-method-post"><span>POSTAL ADDRESS</span><strong>P.O. Box 41918–00100</strong></div>
         </div>
       </div>

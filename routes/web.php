@@ -17,6 +17,12 @@ Route::get('/', function () {
 
 Route::get('/insights', [InsightController::class, 'index'])->name('insights.index');
 Route::get('/insights/{slug}', [InsightController::class, 'show'])->name('insights.show');
+Route::get('/sitemap.xml', function () {
+    $insights = Insight::published()->latest('published_at')->get(['slug', 'updated_at']);
+    $xml = view('sitemap', ['insights' => $insights])->render();
+
+    return response($xml, 200)->header('Content-Type', 'application/xml; charset=UTF-8');
+})->name('sitemap');
 
 Route::prefix('admin')->name('admin.')->group(function () {
     Route::get('/login', [AdminAuthController::class, 'create'])->name('login');
