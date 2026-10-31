@@ -27,7 +27,7 @@ class SiteContent extends Model
             'intro_lead' => 'We are a wealth management company based in Nairobi, Kenya, dealing in short-term note investments designed to provide a predetermined regular income stream for high-net-worth institutions and investors.',
             'intro_body' => 'Our multi-asset strategy uses a long/short trading model, with the primary objective of realizing capital growth and returns for investors. We bring years of experience trading financial instruments and make prudent investment decisions, supported by relationships with international trading desks, brokerages and investment banks.',
             'strategy_title' => "Designed for\nmore than one\nmarket.",
-            'strategy_body' => 'Our diversified fund applies a long/short trading model to pursue capital growth in rising and falling markets. With access to more than 200 asset classes, we use research and risk controls intended to manage exposure to adverse movements and volatility. Investment capital remains at risk.',
+            'strategy_body' => 'Our diversified fund applies a long/short trading model to pursue capital growth in rising and falling markets. With access to more than 200 asset classes, we use research and risk controls intended to manage exposure to adverse movements and volatility.',
             'statement_title' => "Wealth is a journey.\nWe help you see further.",
             'statement_body' => 'Established synergies and partnerships connect us to international trading desks, brokerages and investment banks, bringing flexibility to investment decisions.',
             'benefits_title' => "Built around\nyour perspective.",
