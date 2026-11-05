@@ -864,7 +864,7 @@ h1 em,h2 em { font-family:inherit; font-style:normal; }
   .strategy-glass { z-index:1; }
 }
 @media (max-width:650px) {
-  .strategy-stamp { bottom:58%; z-index:2; }
+  .strategy-stamp { top:36%; bottom:auto; font-size:clamp(30px,9vw,42px); z-index:2; }
   .strategy-glass { z-index:1; }
 }
 @media (prefers-reduced-motion:reduce) {
