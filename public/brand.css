@@ -859,6 +859,14 @@ h1 em,h2 em { font-family:inherit; font-style:normal; }
 @media (min-width:901px) {
   .strategy { grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr); }
 }
+@media (min-width:651px) {
+  .strategy-stamp { bottom:34%; z-index:2; }
+  .strategy-glass { z-index:1; }
+}
+@media (max-width:650px) {
+  .strategy-stamp { bottom:58%; z-index:2; }
+  .strategy-glass { z-index:1; }
+}
 @media (prefers-reduced-motion:reduce) {
   .hero-image.parallax,.strategy-photo.parallax,.quote-image.parallax { transform:none !important; }
 }
